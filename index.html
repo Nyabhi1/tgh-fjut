@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
@@ -72,7 +72,7 @@
     avatarImage.decoding = "async";
 
     bgImage.src = "./bg.jpg";
-    avatarImage.src = "./tgh.jpg";
+    avatarImage.src = "./zyx.jpg";
 
     const FONT_STACK = '"Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif';
 
@@ -272,14 +272,14 @@
       context.textAlign = "center";
       context.textBaseline = "middle";
       context.font = `700 66px ${FONT_STACK}`;
-      context.fillText("田淦宏", centerX, 800);
+      context.fillText("张奕鑫", centerX, 800);
       context.restore();
     }
 
     function drawInfoPanel(context) {
       shadowCard(context, 130, 900, 945, 690, 28, "#FAFBFF");
 
-      const rows = [
+    const rows = [
         { label: "访客姓名", value: "田淦宏", y: 1012 },
         { label: "车辆信息", value: "闽D083RY", y: 1181 },
         { label: "进入校区", value: "旗山北区", y: 1350 },
@@ -287,14 +287,14 @@
       ];
 
       rows.forEach((row) => {
-        fillRoundRect(context, 156, row.y - 43, 8, 84, 4, "#68C6DD");
+        fillRoundRect(context, 160, row.y - 28, 4, 56, 2, "#3FA8CD");
 
         context.save();
-        context.fillStyle = "#8C92A2";
+        context.fillStyle = "#7E8592";
         context.textAlign = "left";
         context.textBaseline = "middle";
-        context.font = `500 48px ${FONT_STACK}`;
-        context.fillText(row.label, 196, row.y);
+        context.font = `400 42px ${FONT_STACK}`;
+        context.fillText(row.label, 192, row.y);
         context.restore();
 
         context.save();
